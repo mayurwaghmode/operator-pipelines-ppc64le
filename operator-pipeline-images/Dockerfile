@@ -1,3 +1,4 @@
+//Dockerfile for ppc64le Arch
 FROM registry.fedoraproject.org/fedora:34
 
 LABEL description="Cli tools for operator certification pipeline"
@@ -59,7 +60,3 @@ RUN chgrp -R 0 /home/user /etc/passwd
 RUN chmod -R g=u /home/user /etc/passwd
 
 USER "${USER_UID}"
-
-
-
-
